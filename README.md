@@ -1,7 +1,7 @@
 # vscode_colourscheme
 The colour scheme fit for [Quiet Light]
 
-Mwno is the colour scheme. Please be careful *not* overwrite our original settings.
+Mwno is the colour scheme. Please be careful *not* to overwrite our original settings.
 The position of Mwno should like this:
 
 
