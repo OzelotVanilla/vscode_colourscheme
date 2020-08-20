@@ -1,0 +1,263 @@
+"editor.tokenColorCustomizations": {
+        "[Quiet Light]": {
+            "comments": {
+                "fontStyle": "",
+                "foreground": "#d1c7b7"
+            },
+            "keywords": {
+                "foreground": "#bc64a4",
+                "fontStyle": "bold"
+            },
+            "strings": "#98623c",
+            "types": "#9ed44c",
+            "numbers": "#e95295",
+            "functions": {
+                "foreground": "#2ca9e1",
+                "fontStyle": ""
+            },
+            "textMateRules": [
+                {
+                    "name": "C++ Keywords",
+                    "scope": "keyword.other.using.directive.cpp",
+                    "settings": {
+                        "foreground": "#bc64a4",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "C++ True and False and NULL",
+                    "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp",
+                    "settings": {
+                        "foreground": "#c5c56a",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "HTML: Attribute",
+                    "scope": [
+                        "meta.tag entity.other.attribute-name",
+                        "entity.other.attribute-name.html"
+                    ],
+                    "settings": {
+                        "foreground": "#f6ad49"
+                    }
+                },
+                {
+                    "name": "HTML: Tag name",
+                    "scope": [
+                        "entity.name.tag"
+                    ],
+                    "settings": {
+                        "foreground": "#ac88ff"
+                    }
+                },
+                {
+                    "name": "HTML: String",
+                    "scope": "string.quoted.double.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html",
+                    "settings": {
+                        "fontStyle": "",
+                        "foreground": "#7fb80e"
+                    }
+                },
+                {
+                    "name": "HTML Plain Text",
+                    "scope": "text.html.derivative",
+                    "settings": {
+                        "foreground": "#6b6f59"
+                    }
+                },
+                {
+                    "name": "Operators",
+                    "scope": "keyword.operator, entity.name.function.operator",
+                    "settings": {
+                        "foreground": "#a59aca",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Variable",
+                    "scope": "variable, support.variable",
+                    "settings": {
+                        "foreground": "#f6ad49"
+                    }
+                },
+                {
+                    "name": "Escape (\\ Special Char)",
+                    "scope": "constant.character.escape",
+                    "settings": {
+                        "foreground": "#92b5a9"
+                    }
+                },
+                {
+                    "name": "CSS Property Name",
+                    "scope": "support.type.property-name.css",
+                    "settings": {
+                        "foreground": "#ff69b4"
+                    }
+                },
+                {
+                    "name": "CSS Property Value",
+                    "scope": "meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css",
+                    "settings": {
+                        "foreground": "#00a2ed"
+                    }
+                },
+                {
+                    "name": "CSS Selector Ele",
+                    "scope": "entity.name.tag.css",
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "CSS Selector Class",
+                    "scope": "entity.other.attribute-name.class.css",
+                    "settings": {
+                        "foreground": "#f69c9f",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "CSS Color Constant",
+                    "scope": "support.constant.color.w3c-extended-color-name.css, support.constant.color.w3c-standard-color-name.css, constant.other.color.rgb-value.hex.css",
+                    "settings": {
+                        "foreground": "#e6b422"
+                    }
+                },
+                {
+                    "name": "CSS Pseudo Class",
+                    "scope": "entity.other.attribute-name.pseudo-class.css",
+                    "settings": {
+                        "foreground": "#cca6bf",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "CSS Sharp Sign",
+                    "scope": "punctuation.definition.entity.css, punctuation.definition.constant.css",
+                    "settings": {
+                        "foreground": "#e198b4"
+                    }
+                },
+                {
+                    "name": "CSS Defined ID",
+                    "scope": "entity.other.attribute-name.id.css, punctuation.definition.entity.css",
+                    "settings": {
+                        "foreground": "#e95295",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Python Attr Func",
+                    "scope": "meta.function-call.python",
+                    "settings": {
+                        "foreground": "#a0d8ef"
+                    }
+                },
+                {
+                    "name": "Python Class Item",
+                    "scope": "meta.item-access.python",
+                    "settings": {
+                        "foreground": "#f58220"
+                    }
+                },
+                {
+                    "name": "Python Class Item Arg",
+                    "scope": "meta.item-access.arguments.python",
+                    "settings": {
+                        "foreground": "#fab27b"
+                    }
+                },
+                {
+                    "name": "Python Pseudo Var",
+                    "scope": "source.python, meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#f6ad49"
+                    }
+                },
+                {
+                    "name": "Python Define",
+                    "scope": "storage.type.function.python",
+                    "settings": {
+                        "foreground": "#0094c8",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Python Defined Func",
+                    "scope": "entity.name.type.class.python",
+                    "settings": {
+                        "foreground": "#007bbb"
+                    }
+                },
+                {
+                    "name": "C++ Include",
+                    "scope": "string.quoted.other.lt-gt.include.cpp",
+                    "settings": {
+                        "foreground": "#c4a3bf"
+                    }
+                },
+                {
+                    "name": "C++ Include Sharp Sign",
+                    "scope": "punctuation.definition.directive.cpp",
+                    "settings": {
+                        "foreground": "#9790a4"
+                    }
+                },
+                {
+                    "name": "Function",
+                    "scope": "entity.name.function, keyword.operator.sizeof.cpp, keyword.operator.typeid.cpp",
+                    "settings": {
+                        "foreground": "#2ca9e1",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "name": "Type",
+                    "scope": "storage.type",
+                    "settings": {
+                        "foreground": "#9ed44c",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "C++ \"using namespace\"",
+                    "scope": "storage.type.namespace.directive.cpp",
+                    "settings": {
+                        "foreground": "#98d98e",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "name": "C++ Real Namespace",
+                    "scope": "entity.name.namespace",
+                    "settings": {
+                        "foreground": "#007bbb",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "name": "C++ Cast",
+                    "scope": "keyword.operator.cast",
+                    "settings": {
+                        "foreground": "#84a2d4"
+                    }
+                },
+                {
+                    "name": "C++ Modifier(const vola rest)",
+                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp",
+                    "settings": {
+                        "foreground": "#839b5c",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "C++ Func Para Modifier (\"&\" and \"*\")",
+                    "scope": "storage.modifier.reference.cpp, storage.modifier.pointer.cpp",
+                    "settings": {
+                        "foreground": "#a59aca"
+                    }
+                }
+            ]
+        }
+    },
