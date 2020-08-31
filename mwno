@@ -1,3 +1,4 @@
+"workbench.colorTheme": "Quiet Light",
 "editor.tokenColorCustomizations": {
         "[Quiet Light]": {
             "comments": {
@@ -11,21 +12,17 @@
             "strings": "#98623c",
             "types": "#9ed44c",
             "numbers": "#e95295",
-            "functions": {
-                "foreground": "#2ca9e1",
-                "fontStyle": ""
-            },
             "textMateRules": [
                 {
                     "name": "C++ Keywords",
-                    "scope": "keyword.other.using.directive.cpp",
+                    "scope": "keyword.other.using.directive.cpp, keyword.other.typedef.cpp",
                     "settings": {
                         "foreground": "#bc64a4",
                         "fontStyle": "bold"
                     }
                 },
                 {
-                    "name": "C++ True and False and NULL",
+                    "name": "C++ True and False and NULL and nullptr",
                     "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp",
                     "settings": {
                         "foreground": "#c5c56a",
@@ -247,7 +244,7 @@
                     "name": "C++ Modifier(const vola rest)",
                     "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp",
                     "settings": {
-                        "foreground": "#839b5c",
+                        "foreground": "#68be8d",
                         "fontStyle": "bold"
                     }
                 },
@@ -256,6 +253,29 @@
                     "scope": "storage.modifier.reference.cpp, storage.modifier.pointer.cpp",
                     "settings": {
                         "foreground": "#a59aca"
+                    }
+                },
+                {
+                    "name": "C++ Struct and Enum",
+                    "scope": "storage.type.struct.cpp, storage.type.enum.cpp, storage.type.struct.declare.cpp, storage.type.enum.declare.cpp",
+                    "settings": {
+                        "foreground": "#82ae46",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "C++ Preprocessor",
+                    "scope": "entity.name.function.preprocessor",
+                    "settings": {
+                        "foreground": "#c5c56a",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "C++ externed",
+                    "scope": "meta.block.extern.cpp",
+                    "settings": {
+                        "foreground": "#9ea1a3"
                     }
                 }
             ]
