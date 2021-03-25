@@ -1,4 +1,27 @@
 "workbench.colorTheme": "Quiet Light",
+"editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "[Quiet Light]": {
+        "rules": {
+            "label": {
+                "foreground": "#028760",
+                "fontStyle": "bold"
+            },
+            "property": {
+                "foreground": "#D9A62E",
+                "fontStyle": ""
+            },
+            "class": "#1E50A2",
+            "typeParameter": "#9ed44c",
+            "variable": {
+                "fontStyle": ""
+            },
+            "parameter": {
+                "fontStyle": ""
+            }
+        }
+    }
+},
 "editor.tokenColorCustomizations": {
         "[Quiet Light]": {
             "comments": {
