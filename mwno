@@ -3,7 +3,7 @@
         "[Quiet Light]": {
             "comments": {
                 "fontStyle": "",
-                "foreground": "#d1c7b7"
+                "foreground": "#B3ADA0"
             },
             "keywords": {
                 "foreground": "#bc64a4",
@@ -14,16 +14,16 @@
             "numbers": "#e95295",
             "textMateRules": [
                 {
-                    "name": "C++ Keywords",
-                    "scope": "keyword.other.using.directive.cpp, keyword.other.typedef.cpp",
+                    "name": "Keywords",
+                    "scope": "keyword.other.using.directive.cpp, keyword.other.typedef.cpp, keyword",
                     "settings": {
                         "foreground": "#bc64a4",
                         "fontStyle": "bold"
                     }
                 },
                 {
-                    "name": "C++ True and False and NULL and nullptr",
-                    "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp",
+                    "name": "True and False and NULL and nullptr",
+                    "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js",
                     "settings": {
                         "foreground": "#c5c56a",
                         "fontStyle": "bold"
@@ -73,9 +73,9 @@
                 },
                 {
                     "name": "Variable",
-                    "scope": "variable, support.variable",
+                    "scope": "variable, support.variable, meta.method.body.java, meta.method-call.java",
                     "settings": {
-                        "foreground": "#f6ad49"
+                        "foreground": "#f39800"
                     }
                 },
                 {
@@ -148,7 +148,7 @@
                     "name": "Python Attr Func",
                     "scope": "meta.function-call.python",
                     "settings": {
-                        "foreground": "#a0d8ef"
+                        "foreground": "#89c3eb"
                     }
                 },
                 {
@@ -156,6 +156,22 @@
                     "scope": "meta.item-access.python",
                     "settings": {
                         "foreground": "#f58220"
+                    }
+                },
+                {
+                    "name": "Python Class Name",
+                    "scope": "entity.name.type.class.python",
+                    "settings": {
+                        "foreground": "#50a06e",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Python Inherited Class",
+                    "scope": "entity.other.inherited-class",
+                    "settings": {
+                        "foreground": "#26610F",
+                        "fontStyle": "bold"
                     }
                 },
                 {
@@ -173,7 +189,7 @@
                     }
                 },
                 {
-                    "name": "Python Define",
+                    "name": "Python Define & Lambda",
                     "scope": "storage.type.function.python",
                     "settings": {
                         "foreground": "#0094c8",
@@ -181,15 +197,23 @@
                     }
                 },
                 {
-                    "name": "Python Defined Func",
-                    "scope": "entity.name.type.class.python",
+                    "name": "Python Lambda",
+                    "scope": "storage.type.function.lambda.python",
                     "settings": {
-                        "foreground": "#007bbb"
+                        "foreground": "#00A497",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Python Constant",
+                    "scope": "constant.other.caps.python",
+                    "settings": {
+                        "foreground": "#c5c56a"
                     }
                 },
                 {
                     "name": "C++ Include",
-                    "scope": "string.quoted.other.lt-gt.include.cpp",
+                    "scope": "string.quoted.other.lt-gt.include.cpp, string.quoted.double.include.cpp",
                     "settings": {
                         "foreground": "#c4a3bf"
                     }
@@ -203,7 +227,7 @@
                 },
                 {
                     "name": "Function",
-                    "scope": "entity.name.function, keyword.operator.sizeof.cpp, keyword.operator.typeid.cpp",
+                    "scope": "entity.name.function, keyword.operator.sizeof.cpp, keyword.operator.typeid.cpp, support.function.builtin.python, support.function",
                     "settings": {
                         "foreground": "#2ca9e1",
                         "fontStyle": ""
@@ -230,7 +254,7 @@
                     "scope": "entity.name.namespace",
                     "settings": {
                         "foreground": "#007bbb",
-                        "fontStyle": ""
+                        "fontStyle": "bold"
                     }
                 },
                 {
@@ -241,8 +265,8 @@
                     }
                 },
                 {
-                    "name": "C++ Modifier(const vola rest)",
-                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp",
+                    "name": "C++/Java Modifier(const vola rest)",
+                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java",
                     "settings": {
                         "foreground": "#68be8d",
                         "fontStyle": "bold"
@@ -276,6 +300,49 @@
                     "scope": "meta.block.extern.cpp",
                     "settings": {
                         "foreground": "#9ea1a3"
+                    }
+                },
+                {
+                    "name": "Java Const",
+                    "scope": "constant.language.java",
+                    "settings": {
+                        "foreground": "#b79b5b",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "VBA Source (Not highlighted Text)",
+                    "scope": "source.vba",
+                    "settings": {
+                        "foreground": "#3e62ad"
+                    }
+                },
+                {
+                    "name": "Assembly Psedu Tag",
+                    "scope": "source.asm",
+                    "settings": {
+                        "foreground": "#5D5D74"
+                    }
+                },
+                {
+                    "name": "Assembly Reg General",
+                    "scope": "constant.language.register.general",
+                    "settings": {
+                        "foreground": "#ff9740"
+                    }
+                },
+                {
+                    "name": "Assembly Reg Segment",
+                    "scope": "constant.language.register.segment",
+                    "settings": {
+                        "foreground": "#ffb02a",
+                    }
+                },
+                {
+                    "name": "Self",
+                    "scope": "variable.language.this.java, variable.language.special.self.python",
+                    "settings": {
+                        "foreground": "#cf747b"
                     }
                 }
             ]
