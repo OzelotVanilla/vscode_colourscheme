@@ -1,28 +1,30 @@
 "workbench.colorTheme": "Quiet Light",
-"editor.semanticTokenColorCustomizations": {
-    "enabled": true,
-    "[Quiet Light]": {
-        "rules": {
-            "label": {
-                "foreground": "#028760",
-                "fontStyle": "bold"
-            },
-            "property": {
-                "foreground": "#D9A62E",
-                "fontStyle": ""
-            },
-            "class": "#1E50A2",
-            "typeParameter": "#9ed44c",
-            "variable": {
-                "fontStyle": ""
-            },
-            "parameter": {
-                "fontStyle": ""
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "[Quiet Light]": {
+            "rules": {
+                "label": {
+                    "foreground": "#028760",
+                    "fontStyle": "bold"
+                },
+                "property": {
+                    "foreground": "#D9A62E",
+                    "fontStyle": ""
+                },
+                "class": "#67A70C",
+                "typeParameter": "#9ed44c",
+                "variable": {
+                    "fontStyle": ""
+                },
+                "parameter": {
+                    "fontStyle": ""
+                }
             }
         }
-    }
-},
-"editor.tokenColorCustomizations": {
+    },
+    "editor.tokenColorCustomizations": {
         "[Quiet Light]": {
             "comments": {
                 "fontStyle": "",
@@ -96,7 +98,8 @@
                 },
                 {
                     "name": "Variable",
-                    "scope": "variable, support.variable, meta.method.body.java, meta.method-call.java",
+                    // Including fallback
+                    "scope": "variable, support.variable, meta.method.body.java, meta.method-call.java, source.cpp",
                     "settings": {
                         "foreground": "#f39800"
                     }
