@@ -1,4 +1,4 @@
-"workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "Quiet Light",
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
     "editor.semanticTokenColorCustomizations": {
@@ -20,7 +20,10 @@
                 },
                 "parameter": {
                     "fontStyle": ""
-                }
+                },
+                "enum": "#e198b4",
+                "enumMember": "#eB9b6f",
+                "interface": "#a7b446"
             }
         }
     },
@@ -209,7 +212,7 @@
                 },
                 {
                     "name": "Python Pseudo Var",
-                    "scope": "source.python, meta.function-call.arguments.python",
+                    "scope": "source.python, meta.function-call.arguments.python, meta.embedded.block.python",
                     "settings": {
                         "foreground": "#f6ad49"
                     }
