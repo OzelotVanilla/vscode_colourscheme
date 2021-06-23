@@ -23,7 +23,9 @@
                 },
                 "enum": "#e198b4",
                 "enumMember": "#eB9b6f",
-                "interface": "#a7b446"
+                "interface": "#a7b446",
+                "namespace": "#007bbb"
+                // "comment": "#b3ada0"
             }
         }
     },
@@ -51,7 +53,7 @@
                 },
                 {
                     "name": "True and False and NULL and nullptr",
-                    "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js",
+                    "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js, constant.language.undefined.js, constant.language.matlab, constant.language.null.ts, constant.language.undefined.ts, constant.language.boolean.false.ts, constant.language.boolean.true.ts",
                     "settings": {
                         "foreground": "#c5c56a",
                         "fontStyle": "bold"
@@ -368,10 +370,35 @@
                     }
                 },
                 {
-                    "name": "Self",
-                    "scope": "variable.language.this.java, variable.language.special.self.python",
+                    "name": "Self and Super",
+                    "scope": "variable.language.this.java, variable.language.special.self.python, variable.language.this.js, variable.language.this.ts, variable.language.super.ts",
                     "settings": {
                         "foreground": "#cf747b"
+                    }
+                },
+                {
+                    "name": "JavaScipt Comment",
+                    "scope": "comment.block.documentation.js, punctuation.definition.comment.js, punctuation.definition.comment.ts, comment.block.documentation.ts",
+                    "settings": {
+                        "foreground": "#b3ada0"
+                    }
+                },
+                {
+                    "name": "Class Fallback",
+                    "scope": "entity.other.inherited-class.js, entity.other.inherited-class.ts",
+                    "settings": {
+                        "foreground": "#67a70c",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "MatLab Meta Function",
+                    "scope": [
+                        "meta.function.matlab",
+                        "meta.function.matlab *"
+                    ],
+                    "settings": {
+                        "foreground": "#00a497"
                     }
                 }
             ]
