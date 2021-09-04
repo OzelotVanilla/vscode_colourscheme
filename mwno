@@ -24,8 +24,10 @@
                 "enum": "#e198b4",
                 "enumMember": "#eB9b6f",
                 "interface": "#a7b446",
-                "namespace": "#007bbb"
-                // "comment": "#b3ada0"
+                "namespace": "#007bbb",
+                "selfParameter": "#cf747b",
+                "operatorOverload": "#a59aca",
+                "comment": "#b3ada0"
             }
         }
     },
@@ -33,7 +35,7 @@
         "[Quiet Light]": {
             "comments": {
                 "fontStyle": "",
-                "foreground": "#B3ADA0"
+                "foreground": "#b3ada0"
             },
             "keywords": {
                 "foreground": "#bc64a4",
@@ -53,7 +55,7 @@
                 },
                 {
                     "name": "True and False and NULL and nullptr",
-                    "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js, constant.language.undefined.js, constant.language.matlab, constant.language.null.ts, constant.language.undefined.ts, constant.language.boolean.false.ts, constant.language.boolean.true.ts",
+                    "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js, constant.language.undefined.js, constant.language.matlab, constant.language.null.ts, constant.language.undefined.ts, constant.language.boolean.false.ts, constant.language.boolean.true.ts, constant.language.json",
                     "settings": {
                         "foreground": "#c5c56a",
                         "fontStyle": "bold"
@@ -95,7 +97,7 @@
                 },
                 {
                     "name": "Operators",
-                    "scope": "keyword.operator, entity.name.function.operator",
+                    "scope": "keyword.operator, entity.name.function.operator, entity.name.operator.cpp",
                     "settings": {
                         "foreground": "#a59aca",
                         "fontStyle": "bold"
@@ -104,7 +106,7 @@
                 {
                     "name": "Variable",
                     // Including fallback
-                    "scope": "variable, support.variable, meta.method.body.java, meta.method-call.java, source.cpp",
+                    "scope": "variable, support.variable, meta.method.body.java, meta.method-call.java, source.cpp, meta.object-literal.key.ts",
                     "settings": {
                         "foreground": "#f39800"
                     }
@@ -176,6 +178,13 @@
                     }
                 },
                 {
+                    "name": "Python Fallback",
+                    "scope": "source.python",
+                    "settings": {
+                        "foreground": "#f39800"
+                    }
+                },
+                {
                     "name": "Python Attr Func",
                     "scope": "meta.function-call.python",
                     "settings": {
@@ -213,15 +222,8 @@
                     }
                 },
                 {
-                    "name": "Python Pseudo Var",
-                    "scope": "source.python, meta.function-call.arguments.python, meta.embedded.block.python",
-                    "settings": {
-                        "foreground": "#f6ad49"
-                    }
-                },
-                {
-                    "name": "Python Define & Lambda",
-                    "scope": "storage.type.function.python",
+                    "name": "Function Define & Lambda",
+                    "scope": "storage.type.function.python, keyword.other.operator.overload.cpp",
                     "settings": {
                         "foreground": "#0094c8",
                         "fontStyle": "bold"
@@ -266,7 +268,7 @@
                 },
                 {
                     "name": "Type",
-                    "scope": "storage.type",
+                    "scope": "storage.type, support.type",
                     "settings": {
                         "foreground": "#9ed44c",
                         "fontStyle": "bold"
@@ -277,7 +279,7 @@
                     "scope": "storage.type.namespace.directive.cpp",
                     "settings": {
                         "foreground": "#98d98e",
-                        "fontStyle": ""
+                        "fontStyle": "bold"
                     }
                 },
                 {
@@ -297,7 +299,7 @@
                 },
                 {
                     "name": "C++/Java Modifier(const vola rest)",
-                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java",
+                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp",
                     "settings": {
                         "foreground": "#68be8d",
                         "fontStyle": "bold"
@@ -371,14 +373,21 @@
                 },
                 {
                     "name": "Self and Super",
-                    "scope": "variable.language.this.java, variable.language.special.self.python, variable.language.this.js, variable.language.this.ts, variable.language.super.ts",
+                    "scope": "variable.language.this.java, variable.language.special.self.python, variable.language.this.js, variable.language.this.ts, variable.language.super.ts, variable.language.this.cpp, variable.language.super.cpp",
                     "settings": {
                         "foreground": "#cf747b"
                     }
                 },
                 {
-                    "name": "JavaScipt Comment",
-                    "scope": "comment.block.documentation.js, punctuation.definition.comment.js, punctuation.definition.comment.ts, comment.block.documentation.ts",
+                    "name": "Class Property",
+                    "scope": "variable.other.property.cpp",
+                    "settings": {
+                        "foreground": "#d9a62e"
+                    }
+                },
+                {
+                    "name": "Comment Fallback",
+                    "scope": "comment.block.documentation.js, punctuation.definition.comment.js, punctuation.definition.comment.ts, comment.block.documentation.ts, comment.block.documentation, punctuation.definition.comment",
                     "settings": {
                         "foreground": "#b3ada0"
                     }
