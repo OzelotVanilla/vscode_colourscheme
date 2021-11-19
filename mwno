@@ -16,7 +16,7 @@
                 "class": "#67A70C",
                 "class.constructor": {
                     "fontStyle": "bold"
-                }
+                },
                 "typeParameter": "#9ed44c",
                 "variable": {
                     "fontStyle": ""
@@ -415,7 +415,7 @@
                 },
                 {
                     "name": "Prefix for Radix",
-                    "scope": "keyword.other.unit.hexadecimal.cpp",
+                    "scope": "keyword.other.unit.hexadecimal.cpp, keyword.other.unit.binary.cpp, keyword.other.unit.octal.cpp",
                     "settings": {
                         "foreground": "#00708e",
                         "fontStyle": "bold"
