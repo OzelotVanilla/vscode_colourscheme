@@ -5,26 +5,34 @@ Mwno is the colour scheme. Please be careful *not* to overwrite our original set
 The position of Mwno should like this:
 
 
-```json
-"editor.semanticTokenColorCustomizations": {
-        "enabled": false
-    },
-    "editor.tokenColorCustomizations": {
+```jsonc
+{    // <---- This is the outer bracket of settings.json
+    "workbench.colorTheme": "Quiet Light",
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "workbench.colorCustomizations": {
         "[Quiet Light]": {
-            "comments": {
-                "fontStyle": "",
-                "foreground": "#d1c7b7"
-            },
-            "keywords": {
-                "foreground": "#bc64a4",
-                "fontStyle": "bold"
-            },
-            "strings": "#98623c",
-            "types": "#9ed44c",
-            "numbers": "#e95295",
-            "functions": {
-                "foreground": "#2ca9e1",
-                "fontStyle": ""
-            },
-            ......
+            "editorBracketHighlight.foreground1": "#daa520", // Goldenrod
+            "editorBracketHighlight.foreground2": "#da70d6", //Orchid
+            "editorBracketHighlight.foreground3": "#6459ed" // CornFlowerBlue
+        }
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "[Quiet Light]": {
+            "rules": {
+                "label": {
+                    "foreground": "#028760",
+                    "fontStyle": "bold"
+                },
+                "property": {
+                    "foreground": "#d9a62e",
+                    "fontStyle": ""
+                },
+......
 ```
+
+For your convenience, you can go to raw code page, select all, then copy-paste to your settings,
+the paste position is inside the first brace.
+
+If your `settings.json` is empty, first create a pair of brace `{}`, then paste into it.
