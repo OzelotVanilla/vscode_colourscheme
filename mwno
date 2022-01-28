@@ -1,6 +1,13 @@
     "workbench.colorTheme": "Quiet Light",
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
+    "workbench.colorCustomizations": {
+        "[Quiet Light]": {
+            "editorBracketHighlight.foreground1": "#daa520", // Goldenrod
+            "editorBracketHighlight.foreground2": "#da70d6", //Orchid
+            "editorBracketHighlight.foreground3": "#6459ed" // CornFlowerBlue
+        }
+    },
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,
         "[Quiet Light]": {
@@ -22,6 +29,7 @@
                     "fontStyle": ""
                 },
                 "parameter": {
+                    "foreground": "#e0a37e",
                     "fontStyle": ""
                 },
                 "enum": "#e198b4",
@@ -57,7 +65,8 @@
                     }
                 },
                 {
-                    "name": "True and False and NULL and nullptr",
+                    // True and False and NULL and nullptr
+                    "name": "Constant",
                     "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js, constant.language.undefined.js, constant.language.matlab, constant.language.null.ts, constant.language.undefined.ts, constant.language.boolean.false.ts, constant.language.boolean.true.ts, constant.language.json",
                     "settings": {
                         "foreground": "#c5c56a",
@@ -226,7 +235,7 @@
                 },
                 {
                     "name": "Function Define & Lambda",
-                    "scope": "storage.type.function.python, keyword.other.operator.overload.cpp, storage.type.function.ts, storage.type.function.js",
+                    "scope": "storage.type.function.python, keyword.other.operator.overload.cpp, storage.type.function.ts, storage.type.function.js, keyword.other.fn.rust",
                     "settings": {
                         "foreground": "#0094c8",
                         "fontStyle": "bold"
@@ -302,7 +311,7 @@
                 },
                 {
                     "name": "C++/Java Modifier(const vola rest)",
-                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp",
+                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts",
                     "settings": {
                         "foreground": "#68be8d",
                         "fontStyle": "bold"
@@ -362,7 +371,7 @@
                 },
                 {
                     "name": "Assembly Reg General",
-                    "scope": "constant.language.register.general",
+                    "scope": "constant.language.register.general, variable.register.lc3asm",
                     "settings": {
                         "foreground": "#ff9740"
                     }
@@ -372,6 +381,14 @@
                     "scope": "constant.language.register.segment",
                     "settings": {
                         "foreground": "#ffb02a"
+                    }
+                },
+                {
+                    "name": "Assembly Fallback",
+                    "scope": "support.other.lc3asm",
+                    "settings": {
+                        "foreground": "#8b2f45",
+                        "fontStyle": "bold"
                     }
                 },
                 {
