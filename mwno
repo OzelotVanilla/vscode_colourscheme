@@ -4,7 +4,7 @@
     "workbench.colorCustomizations": {
         "[Quiet Light]": {
             "editorBracketHighlight.foreground1": "#daa520", // Goldenrod
-            "editorBracketHighlight.foreground2": "#da70d6", //Orchid
+            "editorBracketHighlight.foreground2": "#da70d6", // Orchid
             "editorBracketHighlight.foreground3": "#6459ed" // CornFlowerBlue
         }
     },
@@ -17,7 +17,7 @@
                     "fontStyle": "bold"
                 },
                 "property": {
-                    "foreground": "#D9A62E",
+                    "foreground": "#d9a62e",
                     "fontStyle": ""
                 },
                 "class": "#67A70C",
@@ -124,6 +124,21 @@
                     }
                 },
                 {
+                    "name": "Parameter",
+                    // Including fallback
+                    "scope": "variable.other.jsdoc",
+                    "settings": {
+                        "foreground": "#e0a37e"
+                    }
+                },
+                {
+                    "name": "Member",
+                    "scope": "meta.object-literal.key.ts, meta.object-literal.key.js",
+                    "settings": {
+                        "foreground": "#d9a62e"
+                    }
+                },
+                {
                     "name": "Escape (\\ Special Char)",
                     "scope": "constant.character.escape",
                     "settings": {
@@ -200,7 +215,7 @@
                     "name": "Python Attr Func",
                     "scope": "meta.function-call.python",
                     "settings": {
-                        "foreground": "#89c3eb"
+                        "foreground": "#84b9cb"
                     }
                 },
                 {
@@ -245,7 +260,7 @@
                     "name": "Python Lambda",
                     "scope": "storage.type.function.lambda.python",
                     "settings": {
-                        "foreground": "#00A497",
+                        "foreground": "#00a497",
                         "fontStyle": "bold"
                     }
                 },
@@ -310,7 +325,7 @@
                     }
                 },
                 {
-                    "name": "C++/Java Modifier(const vola rest)",
+                    "name": "C++/Java Modifier (const vola rest)",
                     "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts",
                     "settings": {
                         "foreground": "#68be8d",
@@ -363,10 +378,11 @@
                     }
                 },
                 {
-                    "name": "Assembly Psedu Tag",
+                    // Problematic
+                    "name": "Assembly Pseudo Tag",
                     "scope": "source.asm",
                     "settings": {
-                        "foreground": "#5D5D74"
+                        "foreground": "#5d5d74"
                     }
                 },
                 {
