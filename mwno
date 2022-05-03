@@ -1,4 +1,6 @@
     "workbench.colorTheme": "Quiet Light",
+    "terminal.integrated.windowsEnableConpty": true,
+    "terminal.integrated.minimumContrastRatio": 1,
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
     "workbench.colorCustomizations": {
@@ -27,6 +29,9 @@
                 "typeParameter": "#9ed44c",
                 "variable": {
                     "fontStyle": ""
+                },
+                "variable.defaultLibrary": {
+                    "foreground": "#A69425"
                 },
                 "parameter": {
                     "foreground": "#e0a37e",
@@ -215,7 +220,7 @@
                     "name": "Python Attr Func",
                     "scope": "meta.function-call.python",
                     "settings": {
-                        "foreground": "#84b9cb"
+                        "foreground": "#38a1db"
                     }
                 },
                 {
@@ -450,7 +455,7 @@
                     "name": "Prefix for Radix",
                     "scope": "keyword.other.unit.hexadecimal.cpp, keyword.other.unit.binary.cpp, keyword.other.unit.octal.cpp",
                     "settings": {
-                        "foreground": "#00708e",
+                        "foreground": "#3d6eda",
                         "fontStyle": "bold"
                     }
                 }
