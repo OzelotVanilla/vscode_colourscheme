@@ -26,7 +26,7 @@
                 "class.constructor": {
                     "fontStyle": "bold"
                 },
-                "typeParameter": "#9ed44c",
+                "typeParameter": "#3eb370",
                 "variable": {
                     "fontStyle": ""
                 },
@@ -43,6 +43,7 @@
                 "namespace": "#007bbb",
                 "selfParameter": "#cf747b",
                 "operatorOverload": "#a59aca",
+                "function": "#2ca9e1",
                 "comment": "#b3ada0",
             }
         }
@@ -307,6 +308,14 @@
                     }
                 },
                 {
+                    "name": "Class Constructor",
+                    "scope": "entity.name.function.constructor.cpp",
+                    "settings": {
+                        "foreground": "#67a70c",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
                     "name": "C++ \"using namespace\"",
                     "scope": "storage.type.namespace.directive.cpp",
                     "settings": {
@@ -331,7 +340,7 @@
                 },
                 {
                     "name": "C++/Java Modifier (const vola rest)",
-                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts",
+                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts, storage.modifier.static.cpp, storage.modifier.specifier.functional.post-parameters.const.cpp, storage.modifier.virtual.cpp, storage.modifier.specifier.functional.pre-parameters.constexpr.cpp",
                     "settings": {
                         "foreground": "#68be8d",
                         "fontStyle": "bold"
