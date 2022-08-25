@@ -22,7 +22,7 @@
                     "foreground": "#d9a62e",
                     "fontStyle": ""
                 },
-                "class": "#67A70C",
+                "class": "#67a70c",
                 "class.constructor": {
                     "fontStyle": "bold"
                 },
@@ -124,7 +124,7 @@
                 {
                     "name": "Variable",
                     // Including fallback
-                    "scope": "variable, support.variable, meta.method.body.java, meta.method-call.java, source.cpp, meta.object-literal.key.ts",
+                    "scope": "variable, support.variable, meta.method.body.java, meta.method-call.java, meta.object-literal.key.ts",
                     "settings": {
                         "foreground": "#f39800"
                     }
@@ -309,7 +309,7 @@
                 },
                 {
                     "name": "Class Constructor",
-                    "scope": "entity.name.function.constructor.cpp",
+                    "scope": "entity.name.function.constructor.cpp, entity.name.function.definition.special.constructor.cpp",
                     "settings": {
                         "foreground": "#67a70c",
                         "fontStyle": "bold"
@@ -340,7 +340,7 @@
                 },
                 {
                     "name": "C++/Java Modifier (const vola rest)",
-                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts, storage.modifier.static.cpp, storage.modifier.specifier.functional.post-parameters.const.cpp, storage.modifier.virtual.cpp, storage.modifier.specifier.functional.pre-parameters.constexpr.cpp",
+                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts, storage.modifier.static.cpp, storage.modifier.specifier.functional.post-parameters.const.cpp, storage.modifier.virtual.cpp, storage.modifier.specifier.functional.pre-parameters.constexpr.cpp, storage.modifier.friend.cpp, storage.modifier.specifier.functional.post-parameters.override.cpp, storage.modifier.specifier.functional.post-parameters.const, storage.modifier.specifier.extern.cpp, storage.modifier.extern.cpp, storage.modifier.specifier.functional.pre-parameters.virtual.cpp, storage.modifier.const.cpp, storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
                     "settings": {
                         "foreground": "#68be8d",
                         "fontStyle": "bold"
@@ -451,6 +451,14 @@
                     }
                 },
                 {
+                    "name": "Namespace Fallback",
+                    "scope": "entity.name.scope-resolution",
+                    "settings": {
+                        "foreground": "#007bbb",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
                     "name": "MatLab Meta Function",
                     "scope": [
                         "meta.function.matlab",
@@ -466,6 +474,13 @@
                     "settings": {
                         "foreground": "#3d6eda",
                         "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Code Text Fallback",
+                    "scope": "source.cpp",
+                    "settings": {
+                        "foreground": "#777777"
                     }
                 }
             ]
