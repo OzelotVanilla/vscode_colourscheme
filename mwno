@@ -80,6 +80,22 @@
                     }
                 },
                 {
+                    "name": "Enum",
+                    "scope": "entity.name.type.enum.cpp,storage.type.enum.cpp,storage.type.enum.declare.cpp",
+                    "settings": {
+                        "foreground": "#e198b4",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Label",
+                    "scope": "entity.name.label.ts",
+                    "settings": {
+                        "foreground": "#028760",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
                     "name": "HTML: Attribute",
                     "scope": [
                         "meta.tag entity.other.attribute-name",
@@ -211,6 +227,13 @@
                     }
                 },
                 {
+                    "name": "CSS Wildcard Selector",
+                    "scope": "entity.name.tag.wildcard.css",
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
+                },
+                {
                     "name": "Python Fallback",
                     "scope": "source.python",
                     "settings": {
@@ -293,7 +316,7 @@
                 },
                 {
                     "name": "Function",
-                    "scope": "entity.name.function, keyword.operator.sizeof.cpp, keyword.operator.typeid.cpp, support.function.builtin.python, support.function",
+                    "scope": "entity.name.function, keyword.operator.typeid.cpp, support.function.builtin.python, support.function",
                     "settings": {
                         "foreground": "#2ca9e1",
                         "fontStyle": ""
@@ -339,8 +362,8 @@
                     }
                 },
                 {
-                    "name": "C++/Java Modifier (const vola rest)",
-                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts, storage.modifier.static.cpp, storage.modifier.specifier.functional.post-parameters.const.cpp, storage.modifier.virtual.cpp, storage.modifier.specifier.functional.pre-parameters.constexpr.cpp, storage.modifier.friend.cpp, storage.modifier.specifier.functional.post-parameters.override.cpp, storage.modifier.specifier.functional.post-parameters.const, storage.modifier.specifier.extern.cpp, storage.modifier.extern.cpp, storage.modifier.specifier.functional.pre-parameters.virtual.cpp, storage.modifier.const.cpp, storage.modifier.specifier.functional.pre-parameters.explicit.cpp",
+                    "name": "Modifier",
+                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts, storage.modifier.static.cpp, storage.modifier.specifier.functional.post-parameters.const.cpp, storage.modifier.virtual.cpp, storage.modifier.specifier.functional.pre-parameters.constexpr.cpp, storage.modifier.friend.cpp, storage.modifier.specifier.functional.post-parameters.override.cpp, storage.modifier.specifier.functional.post-parameters.const, storage.modifier.specifier.extern.cpp, storage.modifier.extern.cpp, storage.modifier.specifier.functional.pre-parameters.virtual.cpp, storage.modifier.const.cpp, storage.modifier.specifier.functional.pre-parameters.explicit.cpp, storage.type.function.async.python, storage.type.extern.cpp",
                     "settings": {
                         "foreground": "#68be8d",
                         "fontStyle": "bold"
@@ -355,7 +378,7 @@
                 },
                 {
                     "name": "C++ Struct and Enum",
-                    "scope": "storage.type.struct.cpp, storage.type.enum.cpp, storage.type.struct.declare.cpp, storage.type.enum.declare.cpp",
+                    "scope": "storage.type.struct.cpp,  storage.type.struct.declare.cpp",
                     "settings": {
                         "foreground": "#82ae46",
                         "fontStyle": "bold"
@@ -469,8 +492,8 @@
                     }
                 },
                 {
-                    "name": "Prefix for Radix",
-                    "scope": "keyword.other.unit.hexadecimal.cpp, keyword.other.unit.binary.cpp, keyword.other.unit.octal.cpp",
+                    "name": "Prefix for Radix or String",
+                    "scope": "keyword.other.unit.hexadecimal.cpp, keyword.other.unit.binary.cpp, keyword.other.unit.octal.cpp, meta.encoding.cpp",
                     "settings": {
                         "foreground": "#3d6eda",
                         "fontStyle": "bold"
