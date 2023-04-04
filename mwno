@@ -1,6 +1,7 @@
     "workbench.colorTheme": "Quiet Light",
     "terminal.integrated.windowsEnableConpty": true,
     "terminal.integrated.minimumContrastRatio": 1,
+    "terminal.integrated.drawBoldTextInBrightColors": false,
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
     "workbench.colorCustomizations": {
@@ -38,7 +39,7 @@
                     "fontStyle": ""
                 },
                 "enum": "#e198b4",
-                "enumMember": "#eB9b6f",
+                "enumMember": "#eb9b6f",
                 "interface": "#a7b446",
                 "namespace": "#007bbb",
                 "selfParameter": "#cf747b",
@@ -54,10 +55,10 @@
                 "fontStyle": "",
                 "foreground": "#b3ada0"
             },
-            "keywords": {
-                "foreground": "#bc64a4",
-                "fontStyle": "bold"
-            },
+            // "keywords": {
+            //     "foreground": "#bc64a4",
+            //     "fontStyle": "bold"
+            // },
             "strings": "#98623c",
             "types": "#9ed44c",
             "numbers": "#e95295",
@@ -130,6 +131,14 @@
                     }
                 },
                 {
+                    "name": "CSS At Sign (At Sign before Rule)",
+                    "scope": "keyword.control.at-rule.keyframes.css",
+                    "settings": {
+                        "foreground": "#cca6bf",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
                     "name": "Operators",
                     "scope": "keyword.operator, entity.name.function.operator, entity.name.operator.cpp",
                     "settings": {
@@ -169,7 +178,7 @@
                 },
                 {
                     "name": "CSS Property Name",
-                    "scope": "support.type.property-name.css",
+                    "scope": "support.type.property-name.css, support.type.vendored.property-name.css",
                     "settings": {
                         "foreground": "#ff69b4"
                     }
@@ -230,6 +239,14 @@
                     "name": "CSS Wildcard Selector",
                     "scope": "entity.name.tag.wildcard.css",
                     "settings": {
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "CSS Anime Percentage",
+                    "scope": "entity.other.keyframe-offset.percentage.css",
+                    "settings": {
+                        "foreground": "#eb9b6f",
                         "fontStyle": "bold"
                     }
                 },
@@ -508,4 +525,4 @@
                 }
             ]
         }
-    }
+    },
