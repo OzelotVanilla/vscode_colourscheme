@@ -74,7 +74,7 @@
                 {
                     // True and False and NULL and nullptr
                     "name": "Constant",
-                    "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js, constant.language.undefined.js, constant.language.matlab, constant.language.null.ts, constant.language.undefined.ts, constant.language.boolean.false.ts, constant.language.boolean.true.ts, constant.language.json",
+                    "scope": "constant.language.true.cpp, constant.language.false.cpp, constant.language.NULL.cpp, constant.language.nullptr.cpp, constant.language.python, constant.language.boolean.true.js, constant.language.boolean.false.js, constant.language.null.js, constant.language.undefined.js, constant.language.matlab, constant.language.null.ts, constant.language.undefined.ts, constant.language.boolean.false.ts, constant.language.boolean.true.ts, constant.language.json, constant.language.boolean.true.tsx, constant.language.boolean.false.tsx, constant.language.null.tsx, constant.language.undefined.tsx",
                     "settings": {
                         "foreground": "#c5c56a",
                         "fontStyle": "bold"
@@ -380,7 +380,7 @@
                 },
                 {
                     "name": "Modifier",
-                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts, storage.modifier.static.cpp, storage.modifier.specifier.functional.post-parameters.const.cpp, storage.modifier.virtual.cpp, storage.modifier.specifier.functional.pre-parameters.constexpr.cpp, storage.modifier.friend.cpp, storage.modifier.specifier.functional.post-parameters.override.cpp, storage.modifier.specifier.functional.post-parameters.const, storage.modifier.specifier.extern.cpp, storage.modifier.extern.cpp, storage.modifier.specifier.functional.pre-parameters.virtual.cpp, storage.modifier.const.cpp, storage.modifier.specifier.functional.pre-parameters.explicit.cpp, storage.type.function.async.python, storage.type.extern.cpp",
+                    "scope": "storage.modifier.specifier.const.cpp, storage.modifier.specifier.volatile.cpp, storage.modifier.specifier.restrict.cpp, storage.modifier.specifier.static.cpp, storage.modifier.java, storage.modifier.ts, storage.modifier.specifier.functional.pre-parameters.friend.cpp,storage.type.modifier.access.control.public.cpp,storage.type.modifier.access.control.protected.cpp,storage.type.modifier.access.control.private.cpp, storage.type.modifier.access.public.cpp, storage.type.modifier.access.protected.cpp, storage.type.modifier.access.private.cpp, storage.modifier.async.js, storage.modifier.async.ts, storage.modifier.inline.cpp, storage.modifier.specifier.functional.pre-parameters.inline.cpp, storage.modifier.mut.rust, keyword.control.export.ts, storage.modifier.static.cpp, storage.modifier.specifier.functional.post-parameters.const.cpp, storage.modifier.virtual.cpp, storage.modifier.specifier.functional.pre-parameters.constexpr.cpp, storage.modifier.friend.cpp, storage.modifier.specifier.functional.post-parameters.override.cpp, storage.modifier.specifier.functional.post-parameters.const, storage.modifier.specifier.extern.cpp, storage.modifier.extern.cpp, storage.modifier.specifier.functional.pre-parameters.virtual.cpp, storage.modifier.const.cpp, storage.modifier.specifier.functional.pre-parameters.explicit.cpp, storage.type.function.async.python, storage.type.extern.cpp, storage.modifier.tsx, keyword.control.export.tsx, storage.modifier.async.tsx",
                     "settings": {
                         "foreground": "#68be8d",
                         "fontStyle": "bold"
@@ -463,21 +463,21 @@
                 },
                 {
                     "name": "Self and Super",
-                    "scope": "variable.language.this.java, variable.language.special.self.python, variable.language.this.js, variable.language.this.ts, variable.language.super.ts, variable.language.this.cpp, variable.language.super.cpp",
+                    "scope": "variable.language.this.java, variable.language.special.self.python, variable.language.this.js, variable.language.this.ts, variable.language.super.ts, variable.language.this.cpp, variable.language.super.cpp, variable.language.this.tsx",
                     "settings": {
                         "foreground": "#cf747b"
                     }
                 },
                 {
                     "name": "Class Property",
-                    "scope": "variable.other.property.cpp",
+                    "scope": "variable.other.property.cpp, meta.object-literal.key.tsx",
                     "settings": {
                         "foreground": "#d9a62e"
                     }
                 },
                 {
                     "name": "Comment Fallback",
-                    "scope": "comment.block.documentation.js, punctuation.definition.comment.js, punctuation.definition.comment.ts, comment.block.documentation.ts, comment.block.documentation, punctuation.definition.comment, punctuation.definition.comment.begin.documentation.cpp, punctuation.definition.comment.end.documentation.cpp",
+                    "scope": "comment.block.documentation.js, punctuation.definition.comment.js, punctuation.definition.comment.ts, comment.block.documentation.ts, comment.block.documentation, punctuation.definition.comment, punctuation.definition.comment.begin.documentation.cpp, punctuation.definition.comment.end.documentation.cpp, punctuation.definition.comment.tsx",
                     "settings": {
                         "foreground": "#b3ada0"
                     }
