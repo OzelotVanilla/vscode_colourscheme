@@ -296,7 +296,7 @@
                 },
                 {
                     "name": "Function Define & Lambda",
-                    "scope": "storage.type.function.python, keyword.other.operator.overload.cpp, storage.type.function.ts, storage.type.function.js, keyword.other.fn.rust",
+                    "scope": "storage.type.function.python, keyword.other.operator.overload.cpp, storage.type.function.ts, storage.type.function.tsx, storage.type.function.js, keyword.other.fn.rust",
                     "settings": {
                         "foreground": "#0094c8",
                         "fontStyle": "bold"
